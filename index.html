@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>ITtraining</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="./css/estils.css">
+  </head>
+  <body>
+    <header>
+      <span class="vermell">IT</span>
+      <span class="groc">training</span>&nbsp;
+      <span class="verd">???</span>
+    </header>
+    <main>
+      <article id="pregunta-01-tx" class="elementVisible">
+        <span class="titol">Pregunta #1 (text)</span>
+        <div class="enunciat">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
+        </div>
+        <div class="respostes">
+          <label class="opcio col1">
+            <input type="text" id="resp-01" name="resposta-1" placeholder="Ut enim ad minima veniam" />
+          </label>
+        </div> <!-- FINAL <div class="respostes">-->
+        <button onclick="passaSeguent(this)">Següent >></button>
+      </article> <!-- FINAL <article id="pregunta-01-tx"> -->
+
+      <article id="pregunta-02-ch" class="elementOcult">
+        <span class="titol">Pregunta #2 (checkbox)</span>
+        <div class="enunciat">
+          <p>Ultricies nisi quam metus dictum justo magna litora, condimentum pulvinar libero porttitor sem eleifend odio, bibendum aliquet cursus facilisis lacus hendrerit. Malesuada vestibulum sapien aenean accumsan porttitor nisi hac.</p>
+        </div>
+        <div class="respostes">
+          <label class="opcio col2">
+            <input type="checkbox" name="preg_002"/>
+            <span>Seda ut perspiciatis unde omnis</span>
+          </label>
+          <label class="opcio col2">
+            <input type="checkbox" name="preg_002"/>
+            <span>Nemo enim ipsam voluptatem quia</span>
+          </label>
+          <label class="opcio col2">
+            <input type="checkbox" name="preg_002"/>
+            <span>At vero eos et accusamus et iusto odio</span>
+          </label>
+          <label class="opcio col2">
+            <input type="checkbox" name="preg_002"/>
+            <span>Et harum quidem rerum facilis est et expedita</span>
+          </label>
+        </div> <!-- FINAL <div class="respostes">-->
+        <button onclick="passaSeguent(this)">Següent >></button>
+      </article> <!-- FINAL <article id="pregunta-02-ch"> -->
+
+      <article id="pregunta-03-ra" class="elementOcult">
+        <span class="titol">Pregunta #3 (radio)</span>
+        <div class="enunciat">
+          <p>Nullam tempor magnis fermentum interdum aliquam massa cras metus, eu urna suspendisse eros montes phasellus class quis natoque magnis libero porta id etiam placerat dui, lectus natoque turpis accumsan quis nisl aliquet. </p>
+        </div>
+        <div class="respostes">
+          <label class="opcio col2">
+            <input type="radio" name="preg_003"/>
+            <span>Massa penatibus potenti pellentesque.</span>
+          </label>
+          <label class="opcio col2">
+            <input type="radio" name="preg_003"/>
+            <span>Lectus laoreet senectus vitae risus lacinia.</span>
+          </label>
+          <label class="opcio col2">
+            <input type="radio" name="preg_003"/>
+            <span>Litora rhoncus placerat urna sodales dignissim in mattis, lectus fusce elementum.</span>
+          </label>
+          <label class="opcio col2">
+            <input type="radio" name="preg_003"/>
+            <span>Et harum quidem rerum facilis est et expedita</span>
+          </label>
+        </div> <!-- FINAL <div class="respostes">-->
+        <button onclick="passaSeguent(this)">Següent >></button>
+      </article> <!-- FINAL <article id="pregunta-03-ra"> -->
+
+      <article id="pregunta-04-so" class="elementOcult">
+        <span class="titol">Pregunta #4 (Select One)</span>
+        <div class="enunciat">
+          <p>Taciti vulputate iaculis a ut facilisis ridiculus, curabitur morbi fermentum cubilia cursus, id blandit massa etiam hendrerit.</p>
+        </div>
+        <div class="respostes">
+          <label class="opcio col1">
+            <select id="resp-04">
+              <option selected>&lt;Escull una de les següents opcions.></option>
+              <option>Mollis et ultrices lectus morbi nisi quisque imperdiet bibendum id nisl posuere.</option>
+              <option>Condimentum himenaeos leo cubilia etiam turpis velit dui fames ultricies.</option>
+              <option>Ac neque augue luctus habitasse ad porta cum nulla potenti quisque himenaeos.</option>
+            </select>
+          </label>
+        </div> <!-- FINAL <div class="respostes"> -->
+        <button onclick="passaSeguent(this)">Següent >></button>
+      </article>  <!-- FINAL <article id="pregunta-04-so"> -->
+    </main>  <!-- FINAL <main> -->
+
+    <footer>
+      <span>Designed and developed by DAW2© - 2020-2021 - All rights reserved</span>
+    </footer>
+    <script src="./js/seguent.js"></script>
+  </body>
+</html>
