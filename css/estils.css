@@ -373,6 +373,9 @@ button:disabled {
   border: 3px solid var(--botoInactiuText);
   cursor: not-allowed;
 }
+.anterior{
+  align-self: flex-start;
+}
 
 footer {
   height: 5%;
