@@ -389,3 +389,31 @@ footer span {
   font-size: 1.3em;
   color: var(--footerText);
 }
+#crono{
+  position: absolute;
+  height : auto;
+  width : 200px;
+  bottom : 0px;
+  text-align: center;
+}
+
+#comptador{
+  font-size: 3em;
+  color:white;
+}
+
+#barraBuida{
+  width : 150px;
+  height : 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  margin-left : 25px;
+}
+
+#barraComptador{
+  height : 10px;
+  border-radius: 10px;
+  background-color: mediumseagreen;
+  margin-top : -10px;
+  margin-left : 25px;
+}
