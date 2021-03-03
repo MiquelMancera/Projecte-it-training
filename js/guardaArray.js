@@ -109,13 +109,17 @@ function pintaQuestionari(){
     //nouTitol.innerText = `Pregunta #${preguntaActual+1}(${tipusPregText}) `;
 
     let textTitolPregunta = document.createTextNode(`Pregunta #${preguntaActual+1}(${tipusPregText})`);
-      noutTitol.appendChild(textTitolPregunta);
+      nouTitol.appendChild(textTitolPregunta);
+      nouArticle.appendChild(nouTitol);
+      contenidorQuestionari.appendChild(nouArticle);
+      
+    elementEnunciat = `<div class="enunciat"><p>${llistaPreguntes[preguntaActual].enunciatPreg}</p></div>`;
 
-    elementEnunciat = '<div class="enunciat">'
-        + '<p>'
-        + llistaPreguntes[preguntaActual].enunciatPreg
-        + '</p>'
-        + '</div>';
+    let nouEnunciatPregunta = document.createElement("div");
+    nouEnunciatPregunta.classList.add("enunciat");
+
+    let nouTextEnunciat = document.createElement("p");
+    nouTextEnunciat.innerText=`${llistaPreguntes[preguntaActual].enunciatPreg}`;
 
 
     elementRespostes= ''
@@ -146,12 +150,12 @@ function pintaQuestionari(){
     console.log ("elementRespostes = " + elementRespostes);
     console.log ("elementGrupBotons = " + elementGrupBotons);
 
-    contenidorQuestionari.innerHTML += elementArticle 
-        + elementTitol
-        + elementEnunciat
-        + elementRespostes
-        + elementGrupBotons
-        + '</article>';
+   //  contenidorQuestionari.innerHTML += elementArticle 
+   //      + elementTitol
+   //      + elementEnunciat
+   //      + elementRespostes
+   //      + elementGrupBotons
+   //      + '</article>';
 
   } 
   
